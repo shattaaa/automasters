@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Automobile Shop</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #e3f2fd; }
+        header {
+            background: url('banner.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        header img { max-height: 60px; margin-bottom: 10px; }
+        nav { display: flex; justify-content: center; background: #01579b; padding: 0.5rem; }
+        nav a { color: white; text-decoration: none; padding: 0 1rem; }
+        .container { padding: 2rem; text-align: center; }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .gallery img, .gallery video { max-width: 300px; border-radius: 5px; }
+        footer { background: #0277bd; color: white; text-align: center; padding: 1rem; position: fixed; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Company Logo">
+        <h1>Welcome to Your Automobile Shop</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container" id="services">
+        <h2>Our Services</h2>
+        <p>We offer vehicle maintenance, repairs, customization, and more to keep your car in top shape.</p>
+    </div>
+    <div class="container" id="products">
+        <h2>Our Products</h2>
+        <p>We sell high-quality auto parts, accessories, and tools to meet your automotive needs.</p>
+    </div>
+    <div class="container" id="gallery">
+        <h2>Gallery</h2>
+        <p>Check out our latest work!</p>
+        <div class="gallery">
+            <img src="car1.jpg" alt="Car repair work">
+            <img src="car2.jpg" alt="Custom paint job">
+            <video controls>
+                <source src="car_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>We are a trusted automobile shop dedicated to providing top-notch services and products for car enthusiasts and everyday drivers.</p>
+    </div>
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@autosupply.com | Phone: (123) 456-7890</p>
+    </div>
+    <footer>
+        <p>&copy; 2025 Your Automobile Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
